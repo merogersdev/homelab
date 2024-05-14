@@ -21,7 +21,7 @@ Business-class network to improve and learn new skills. ISP Modem/Router is in b
 ## To Do List
 
 - [ ] Floor Plan
-- [ ] Physical Network Map
+- [x] Physical Network Map
 - [ ] Main Distribution Frame (central point, wan)
 - [ ] Intermediate Distribution Frame (users to network)
 - [ ] Logical network map (high level view)
