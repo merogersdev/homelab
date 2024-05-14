@@ -20,12 +20,12 @@ Business-class network to improve and learn new skills. ISP Modem/Router is in b
 
 ## To Do List
 
-- [] Floor Plan
-- [] Physical Network Map
-- [] Main Distribution Frame (central point, wan)
-- [] Intermediate Distribution Frame (users to network)
-- [] Logical network map (high level view)
+- [ ] Floor Plan
+- [ ] Physical Network Map
+- [ ] Main Distribution Frame (central point, wan)
+- [ ] Intermediate Distribution Frame (users to network)
+- [ ] Logical network map (high level view)
 - [x] IP Address Allocation Table
-- [] Disaster Recovery
-- [] Server Setup - NAS
-- [] Server Setup - Controller
+- [ ] Disaster Recovery
+- [ ] Server Setup - NAS
+- [ ] Server Setup - Controller
