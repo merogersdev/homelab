@@ -27,5 +27,5 @@ Business-class network to improve and learn new skills. ISP Modem/Router is in b
 - [ ] Logical network map (high level view)
 - [x] IP Address Allocation Table
 - [ ] Disaster Recovery
-- [ ] Server Setup - NAS
+- [x] Server Setup - NAS
 - [ ] Server Setup - Controller
