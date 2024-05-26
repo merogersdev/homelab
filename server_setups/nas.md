@@ -9,6 +9,9 @@ Main file server with high-performing ZFS storage and Plex Media Server. Options
 - OS: TrueNAS Scale 24.04.0
 - CPU: Intel Core 2 Quad Q6600@2.4GHz
 - Memory: 8GB
+- Disks:
+  - Main: 128GB Corsair SSD
+  - Storage: 2x 4TB WD 5400RPM HDDs
 
 ## Network
 
