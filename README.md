@@ -6,7 +6,7 @@ Business-class SDN network with Mesh support and dedicated NAS PC. ISP Modem/Rou
 
 ## Table of Contents
 
-- [Physical Network Map](maps/physical.map.pdf)
+- [Physical Network Map](maps/physical.pdf)
 - [Logical Network Map](maps/logical.pdf)
 - [IP Address Assignment](ip.addresses.md)
 - [Network Controller Configuration](config/controller.md)
