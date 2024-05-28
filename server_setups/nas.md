@@ -2,11 +2,11 @@
 
 ## Summary
 
-Main file server with high-performing ZFS storage and Plex Media Server. Options for Docker containers and VMs.
+Main file/media server for home lab with ZFS storage.
 
 ## Specifications
 
-- OS: TrueNAS Scale 24.04.0
+- OS: TrueNAS Scale 24.04.1
 - CPU: Intel Core 2 Quad Q6600@2.4GHz
 - Memory: 8GB
 - Disks:
@@ -28,7 +28,7 @@ Main file server with high-performing ZFS storage and Plex Media Server. Options
 
 - Name: Shared
 - Roles: SMB
-- Permissions: User - apps, Allow | Modify
+- Permissions: User - apps, Full Control
 
 ## Apps
 
