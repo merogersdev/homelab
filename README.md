@@ -10,9 +10,9 @@ Business-class SDN network with Mesh support and dedicated NAS PC. ISP Modem/Rou
 - [Logical Network Map](maps/logical.pdf)
 - [IP Address Assignment](ip.addresses.md)
 - [Network Controller Configuration](config/controller.md)
-- [NAS Server Configuration](config/nas.md)
+- [Hypervisor Configuration](config/hypervisor.md)
 - Docker Server Configuration (TO DO)
-- Disaster Recovery (TO DO)
+- Disaster Recovery & Backup (TO DO)
 - Floor Plan (TO DO)
 - Monitoring (TO DO)
 
@@ -21,7 +21,7 @@ Business-class SDN network with Mesh support and dedicated NAS PC. ISP Modem/Rou
 - Building floors and walls are thick concrete. No hardwired connections are possible, except to the main router.
 - Single router offers adequate coverage for one floor, but minimal to no coverage for the other 3 as well as outside.
 - Very limited budget, and will have to utilize hardware that I have on-hand.
-- Switch cannot be adopted by Omada Controlle r. Has to be configured as standalone. Known issue.
+- Switch cannot be adopted by Omada Controller. Has to be configured as standalone. Known issue.
 
 ## Areas to improve
 
