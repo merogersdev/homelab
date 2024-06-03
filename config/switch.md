@@ -23,13 +23,11 @@ TP-Link TL-SG108E managed switch, in standalone mode.
 
 | VLAN ID | VLAN Name  | Member Ports | Tagged Ports | Untagged Ports |
 | ------- | ---------- | ------------ | ------------ | -------------- |
-| 1       | Management | 1-4          | 1            | 2-4            |
-| 10      | Building   | 1,5          | 1            | 5              |
-| 20      | Guest      | 1            | 1            |                |
-| 30      | Lab        | 1,6-8        | 1            | 6-8            |
+| 1       | Management | 1-6          | 1            | 2-6            |
+| 30      | Lab        | 1,7-8        | 1            | 7-8            |
 
 #### 802.1Q PVID
 
 | Port 1 | Port 2 | Port 3 | Port 4 | Port 5 | Port 6 | Port 7 | Port 8 |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| 1      | 1      | 1      | 1      | 10     | 30     | 30     | 30     |
+| 1      | 1      | 1      | 1      | 1      | 1      | 30     | 30     |
