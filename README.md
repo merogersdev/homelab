@@ -2,17 +2,43 @@
 
 ## Summary
 
-Business-class SDN network with Mesh support and dedicated NAS PC. ISP Modem/Router is in bridge mode.
+Business-class SDN network with Mesh support, VLANs, NAS/File Server, Media Server, Network Controller, and Ad Blocker.
 
-## Table of Contents
+## Network At a Glance
+
+### Core Services
+
+- TP-Link Omada Network Controller (Docker)
+- AdGuard Home DNS Server & Ad Block (Docker)
+- TrueNAS Scale NAS/File Server (Bare-Metal)
+- Plex Media Server (TrueNAS Docker App)
+
+### Main Network Configuration
+
+- VLAN 1: Management VLAN (Infrastructure)
+- VLAN 10: Building VLAN (Home Network)
+  - SSID: Building, 5GHz
+  - SSID: Maclennan, 2.4GHz
+- VLAN 20: Guest VLAN (Isolated Guest Network)
+  - SSID: MaxWiFi Guest, 5GHz & 2.4GHz
+- VLAN 30: Lab VLAN (HomeLab Test Network)
+  - SSID: MaxWiFi, 5GHz & 2.4GHz
+
+### Individual Configurations
+
+- [IP Address Assignment](ip.addresses.md)
+- [Network Controller](config/controller.md)
+- [NAS/File Server](config/nas.md)
+- [Docker Server](config/docker.md)
+
+### Network Maps
 
 - [Physical Network Map](maps/physical.pdf)
 - [Logical Network Map](maps/logical.pdf)
-- [IP Address Assignment](ip.addresses.md)
-- [Network Controller Configuration](config/controller.md)
-- [File Server](config/nas.md)
-- Hypervisor Configuration (TO DO)
-- Docker Server Configuration (TO DO)
+
+### Next Up
+
+- [Hypervisor Configuration (TO DO)](config/hypervisor.md)
 - Disaster Recovery & Backup (TO DO)
 - Floor Plan (TO DO)
 - Monitoring (TO DO)
