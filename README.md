@@ -10,8 +10,10 @@ Business-class SDN network with Mesh support, VLANs, NAS/File Server, Media Serv
 
 - TP-Link Omada Network Controller (Docker)
 - AdGuard Home DNS Server & Ad Block (Docker)
-- TrueNAS Scale NAS/File Server (Bare-Metal)
-- Plex Media Server (TrueNAS Docker App)
+- Nginx Proxy (Docker)
+- Portainer (Docker)
+- File Server (TerraMaster NAS)
+- Plex Media Server (TerraMaster NAS)
 
 ### Main Network Configuration
 
@@ -20,16 +22,17 @@ Business-class SDN network with Mesh support, VLANs, NAS/File Server, Media Serv
   - SSID: Building, 5GHz
   - SSID: Maclennan, 2.4GHz
 - VLAN 20: Guest VLAN (Isolated Guest Network)
-  - SSID: MaxWiFi Guest, 5GHz & 2.4GHz
-- VLAN 30: Lab VLAN (HomeLab Test Network)
-  - SSID: MaxWiFi, 5GHz & 2.4GHz
+  - SSID: MaxWiFi Guest, 2.4GHz
+- VLAN 30: MaxWiFi VLAN (HomeLab Network)
+  - SSID: MaxWiFi, 5GHz
 
 ### Individual Configurations
 
 - [IP Address Assignment](ip.addresses.md)
 - [Network Controller](config/controller.md)
-- [NAS/File Server](config/nas.md)
 - [Docker Server](config/docker.md)
+- [Managed Switch](config/switch.md)
+- [Hypervisor](config/hypervisor.md)
 
 ### Network Maps
 
@@ -38,7 +41,6 @@ Business-class SDN network with Mesh support, VLANs, NAS/File Server, Media Serv
 
 ### Next Up
 
-- [Hypervisor Configuration (TO DO)](config/hypervisor.md)
 - Disaster Recovery & Backup (TO DO)
 - Floor Plan (TO DO)
 - Monitoring (TO DO)
