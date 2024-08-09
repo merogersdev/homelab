@@ -18,6 +18,8 @@ Primary docker server on a RaspberryPi, hosting core network services including 
 - Docker Community Edition
 - AdGuard Home
 - TP-Link Omada Controller
+- Portainer
+- HomePage Dashboard
 - UFW Firewall
 - OpenSSH Server
 
@@ -28,12 +30,10 @@ Primary docker server on a RaspberryPi, hosting core network services including 
 docker-compose.yml
 
 ```
-version: "3.1"
-
 services:
   omada-controller:
     container_name: omada-controller
-    image: mbentley/omada-controller:5.13
+    image: mbentley/omada-controller:latest
     restart: unless-stopped
     ulimits:
       nofile:
@@ -75,7 +75,6 @@ volumes:
 docker-compose.yml
 
 ```
-version: "3"
 services:
   adguardhome:
     image: adguard/adguardhome
@@ -94,13 +93,50 @@ services:
     restart: unless-stopped
 ```
 
+3. Portainer
+
+docker-compose.yml
+
+```
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - 9443:9443
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+volumes:
+  data:
+```
+
+4. HomePage
+
+```
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+    env_file: "./.env"
+    ports:
+      - 3001:3000
+    volumes:
+      - ./config:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock #
+```
+
 ## UFW Configuration
 
 ### Allow
 
-- SSH
-- Omada
-- AdGuard
+- SSH (22)
+- Omada (Profile)
+- AdGuard (Profile)
+- Portainer (9000)
+- HomePage (3001)
+- Nginx Proxy Manager (81)
 
 ### Custom Profiles
 
